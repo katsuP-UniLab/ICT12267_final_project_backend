@@ -2,9 +2,11 @@
   "name": "ict12267_final_project_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "prisma generate && tsc && node dist/app.js",
+    "build": "tsc",
+    "dev": "nodemon app.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,7 @@
     "@types/node": "^22.14.1",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "ez-serve": "^1.0.2",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
