@@ -1,7 +1,7 @@
 export interface payloadInterface {
   status: number
   message: string
-  payload?: innerPayloadInterface[]
+  payload?: innerPayloadInterface | innerPayloadInterface[]
 }
 
 interface innerPayloadInterface {
